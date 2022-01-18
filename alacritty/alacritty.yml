@@ -1,0 +1,128 @@
+env:
+  TERM: xterm-256color
+
+window:
+  dimensions:
+    columns: 0
+    lines: 0
+
+  padding:
+    x: 0
+    y: 0
+
+  decorations: full
+
+  dynamic_title: true
+
+scrolling:
+  multiplier: 1
+
+window:
+  opacity: 0.9
+
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  save_to_clipboard: true
+live_config_reload: true
+
+font:
+  normal:
+    family: Mononoki Nerd Font
+    style: Regular
+
+  bold:
+    family: Mononoki Nerd Font
+    style: Bold
+
+  italic:
+    family: Mononoki Nerd Font
+    style: Italic
+
+  size: 14.0
+
+  offset:
+    x: 0
+    y: 0
+
+  glyph_offset:
+    x: 0
+    y: 0
+
+  scale_with_dpi: true
+
+  use_thin_strokes: false
+
+draw_bold_text_with_bright_colors: true
+
+colors:
+  # Default colors
+  primary:
+    background: '0x1c1e26'
+    foreground: '0xe0e0e0'
+
+  # Cursor colors
+  cursor:
+    text: '0x1d1f21'
+    cursor: '0xffffff'
+
+  # Selection colors
+  selection:
+    text: '0xf8f8f2'
+    background: '0x44475a'
+
+  # Normal colors
+  normal:
+    black: '0x16161c'
+    red: '0xe95678'
+    green: '0x29d398'
+    yellow: '0xfab795'
+    blue: '0x26bbd9'
+    magenta: '0xee64ac'
+    cyan: '0x59e1e3'
+    white: '0xd5d8da'
+
+  # Bright colors
+  bright:
+    black: '0x5b5858'
+    red: '0xec6a88'
+    green: '0x3fdaa4'
+    yellow: '0xfbc3a7'
+    blue: '0x3fc4de'
+    magenta: '0xf075b5'
+    cyan: '0x6be4e6'
+    white: '0xd5d8da'
+
+mouse_bindings:
+  - { mouse: Middle, action: PasteSelection }
+
+mouse:
+  double_click: { threshold: 300 }
+  triple_click: { threshold: 300 }
+  faux_scrolling_lines: 1
+  hide_when_typing: false
+
+cursor:
+  style: Block
+  unfocused_hollow: true
+
+key_bindings:
+  - { key: Y,              mods: Control, action: Paste                      }
+  - { key: W,              mods: Alt,     action: Copy                       }
+  - { key: Insert,         mods: Shift,   action: PasteSelection             }
+  - { key: Key0,           mods: Control, action: ResetFontSize              }
+  - { key: Equals,         mods: Control, action: IncreaseFontSize           }
+  - { key: NumpadAdd,      mods: Control, action: IncreaseFontSize           }
+  - { key: NumpadSubtract, mods: Control, action: DecreaseFontSize           }
+  - { key: Minus,          mods: Control, action: DecreaseFontSize           }
+  - { key: Return,         mods: Alt,     action: ToggleFullscreen           }
+  - { key: Paste,                         action: Paste                      }
+  - { key: Copy,                          action: Copy                       }
+  - { key: L,              mods: Control, action: ClearLogNotice             }
+  - { key: L,              mods: Control, chars: "\x0c"                      }
+  - { key: PageUp,         mods: Shift,   action: ScrollPageUp,   mode: ~Alt }
+  - { key: PageDown,       mods: Shift,   action: ScrollPageDown, mode: ~Alt }
+  - { key: Home,           mods: Shift,   action: ScrollToTop,    mode: ~Alt }
+  - { key: End,            mods: Shift,   action: ScrollToBottom, mode: ~Alt }
+
+shell:
+  program: /bin/zsh
