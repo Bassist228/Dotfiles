@@ -5,9 +5,5 @@ This is my [XMonad config](https://github.com/Bassist228/XMonad-config).
 
 - Settings for:
         - Alacritty
-        - Dmenu
-        - Dunst
-        - Neofetch
-        - Picom
-        - Xmobar
+        - 
 ## Usage
