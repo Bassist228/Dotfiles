@@ -10,4 +10,4 @@ This is my [XMonad config](https://github.com/Bassist228/XMonad-config).
         -Neofetch
         -Picom
         -Xmobar
-
+## Usage
