@@ -4,6 +4,6 @@
 This is my [XMonad config](https://github.com/Bassist228/XMonad-config).
 
 - Settings for:
-        - Alacritty
+  - Alacritty
         - 
 ## Usage
